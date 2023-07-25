@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Numito,sans-serif';
+    transition: ease 1s;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.navone{
+    width: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    width: 40vh;
+    font-family: 'Caesar Dressing', sans-serif;
+    font-size: 40px;
+    line-height: 66px;
+}
+
+.navthow {
+    width: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 135vh;
+}
+
+main nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+
+main nav a {
+    color: rgba(16, 15, 15, 1);
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+    width: 70vh;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.primeirasessao {
+    display: flex;
+    width: 70%;
+    height: 110vh;
+}
+
+.primeirasessao div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+    width: 18vw;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div p{
+    width: 80%;
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+    color: rgba(226, 226,226, 0.753);
+}
+
+div h2 {
+    width: 80%;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: rgba(249, 249, 249,1);
+}
+
+.xbox {
+    background: url(./img/xbox.jpg);
+    background-size: cover;
+}
+
+.cyberpunk {
+    background: url(./img/cyberpunk.jpg.jpg);
+    background-size: cover;
+}
+
+.multiverso{
+    background: url(./img/hero\ 1.png);
+    background-size: cover;
+}
+
+.nfs{
+    width: 61.5vw !important;
+    background: url(./img/needforspeed.jpg.jpg);
+    background-size: cover;
+}
+
+.nfs p, .nfs h2 {
+    width: 98%;
+}
+
+.carregando {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #E2E2E2;
+    height: 13vh;
+    justify-content: space-around;
+}
+
+footer button {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 4vw;
+    border: none;
+    background: transparent;
+}
+
+footer nav {
+    width: 30vw;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: rgba(16, 15,15,1);
+}
+
+section div:hover {
+    scale: 1.1;
+    border:solid 0.5px;
+    box-shadow: 0px 5px 30px #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(min-width:769px) and (max-width:1024px){
+    main {
+        height: 200vh;
+    }
+    .primeirasessao {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 180vh;
+    }
+    h1 {
+        text-align: center;
+    }
+    .primeirasessao div {
+        width: 80vw !important;
+        height: 40vh !important;
+        background-position: 0% 30%;
+    }
+    .primeirasessao :nth-child(1){
+        background-position: 1% 10%;
+    }
+
+    .nfs {
+        background-position: 65%;
+    }
+    footer button{
+        width: 10%;
+    }
+
+    footer nav {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px){
+    .navone {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        height: 12vh;
+    }
+    h1 {
+        text-align: center;
+    }
+    main {
+        height: 240vh;
+    }
+    .primeirasessao {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 220vh;
+    }
+    .primeirasessao div {
+        width: 85vw !important;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .nfs {
+        background-size: cover !important;
+        background-position: 65%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    footer button {
+        width: 20%;
+    }
+    footer nav {
+        width: 90%;
+    }
+}
